@@ -1,6 +1,6 @@
 # Quickstart
 
-Create your first payment in 5 minutes.
+This is the updated setup documentation for quickstart.
 
 ## 1. Get your API key
 Log in to the merchant portal → Settings → API Keys.
