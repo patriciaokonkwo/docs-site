@@ -21,3 +21,5 @@
    ```
 
 5. Open your browser and go to `http://localhost:3000` to view the documentation.
+
+6. Additional setup steps as needed.
