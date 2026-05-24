@@ -25,3 +25,13 @@
    ```
 
 5. **View the documentation**: Open your web browser and navigate to `http://localhost:3000` to access the documentation site.
+
+6. **Build for production**: If you want to create a production build, run:
+   
+   ```bash
+   npm run build
+   ```
+
+7. **Deploy the site**: You can deploy the built files in the `build` directory to your preferred hosting service.
+
+8. **Troubleshooting**: If you encounter issues, ensure that your Node.js and npm versions are up to date. Refer to the official documentation for further assistance.
