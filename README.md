@@ -12,7 +12,7 @@
    cd docs-site
    ```
 
-3. **Install dependencies**: Ensure you have Node.js and npm installed. Run the following command to install all necessary dependencies for the project:
+3. **Install dependencies**: Ensure you have Node.js (version 14 or higher) and npm (version 6 or higher) installed. Run the following command to install all necessary dependencies for the project:
    
    ```bash
    npm install
@@ -32,6 +32,6 @@
    npm run build
    ```
 
-7. **Deploy the site**: You can deploy the built files in the `build` directory to your preferred hosting service.
+7. **Deploy the site**: You can deploy the built files in the `build` directory to your preferred hosting service (e.g., Vercel, Netlify, GitHub Pages).
 
 8. **Troubleshooting**: If you encounter issues, ensure that your Node.js and npm versions are up to date. Refer to the official documentation for further assistance.
