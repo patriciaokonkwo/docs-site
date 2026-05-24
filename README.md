@@ -25,3 +25,7 @@
    ```
 
 5. **View the documentation**: Open your web browser and navigate to `http://localhost:3000` to access the documentation site.
+
+## Issue 7 Update
+
+This update addresses the requirements outlined in Issue #7, ensuring that the README provides clear and comprehensive setup instructions.
