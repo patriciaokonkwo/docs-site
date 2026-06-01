@@ -44,3 +44,10 @@
 ## Issue 7 Update
 
 This update addresses the requirements outlined in Issue #7, ensuring that the README provides clear and comprehensive setup instructions.
+
+## PaymentService Integration Points
+
+This section outlines the integration points for the PaymentService.java.
+
+- **Method 1**: Description of integration point 1.
+- **Method 2**: Description of integration point 2.
