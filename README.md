@@ -41,6 +41,27 @@
 
 7. **Troubleshooting**: If you encounter issues, ensure your Node.js and npm versions are up to date. You can refer to the official documentation for further assistance. If problems persist, check the console for error messages and consult the community forums for help.
 
-## Issue 7 Update
+## PaymentService.java Integration Points
 
-This update addresses the requirements outlined in Issue #7, ensuring that the README provides clear and comprehensive setup instructions.
+### Overview
+The `PaymentService.java` class provides an API for handling payment processing within the application. This document outlines its public API, dependencies, and typical invocation flow.
+
+### Public API
+- **processPayment(PaymentRequest request)**: Initiates a payment process.
+- **getPaymentStatus(String paymentId)**: Retrieves the status of a payment.
+
+### Dependencies
+- **PaymentGateway**: Interface for payment processing.
+- **TransactionLogger**: Logs transaction details for auditing.
+
+### Typical Invocation Flow
+1. Create a `PaymentRequest` object with necessary details.
+2. Call `processPayment(request)` to initiate the payment.
+3. Use `getPaymentStatus(paymentId)` to check the payment status after processing.
+
+### Example Usage
+```java
+PaymentRequest request = new PaymentRequest(...);
+PaymentService service = new PaymentService();
+service.processPayment(request);
+```
