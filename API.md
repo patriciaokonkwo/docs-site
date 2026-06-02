@@ -1,34 +1,17 @@
-# PaymentService Integration Points
+## Authentication
 
-## Overview
-The `PaymentService.java` module handles payment processing and integrates with various external payment gateways.
+To access the PaymentService API, you must include a valid API key in the request headers. The API key can be obtained from the developer portal after registering your application.
 
-## Public API
-- **processPayment(PaymentRequest request)**: Initiates a payment transaction.
-- **refundPayment(String transactionId)**: Processes a refund for a given transaction.
-- **getPaymentStatus(String transactionId)**: Retrieves the status of a payment transaction.
-
-## Dependencies
-- **External Libraries**: 
-  - `payment-gateway-sdk`: Required for communication with payment gateways.
-  - `logging-library`: For logging payment transactions and errors.
-
-## Typical Invocation Flow
-1. **Create a Payment Request**: Construct a `PaymentRequest` object with necessary details.
-2. **Process Payment**: Call `processPayment(request)` to initiate the transaction.
-3. **Check Status**: Use `getPaymentStatus(transactionId)` to check if the payment was successful.
-4. **Handle Refunds**: If needed, call `refundPayment(transactionId)` to process a refund.
-
-## Example Usage
-```java
-PaymentService paymentService = new PaymentService();
-PaymentRequest request = new PaymentRequest(...);
-String transactionId = paymentService.processPayment(request);
-String status = paymentService.getPaymentStatus(transactionId);
+### Example Header
+```http
+Authorization: Bearer YOUR_API_KEY
 ```
 
-## Error Handling
-- Ensure to handle exceptions related to payment processing, such as `PaymentException` and `GatewayTimeoutException`. 
+## Rate Limits
 
-## Conclusion
-This document outlines the key integration points for the `PaymentService.java` module. Ensure to keep this updated with any changes in the payment processing logic or dependencies.
+The PaymentService API enforces rate limits to ensure fair usage. The current limits are:
+- **Requests per minute**: 100
+- **Requests per hour**: 1000
+
+If you exceed these limits, you will receive a `429 Too Many Requests` response. Please implement exponential backoff in your application to handle rate limit errors gracefully.
+
