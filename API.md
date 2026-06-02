@@ -1,17 +1,20 @@
-## Authentication
+## Key Concepts
 
-To access the PaymentService API, you must include a valid API key in the request headers. The API key can be obtained from the developer portal after registering your application.
+### PaymentRequest
+A `PaymentRequest` object contains the necessary information to initiate a payment, including:
+- **amount**: The amount to be charged.
+- **currency**: The currency for the transaction.
+- **paymentMethod**: The method of payment (e.g., credit card, PayPal).
 
-### Example Header
-```http
-Authorization: Bearer YOUR_API_KEY
-```
+### Payment Status
+The payment status can be one of the following:
+- **Pending**: The payment is being processed.
+- **Completed**: The payment was successful.
+- **Failed**: The payment could not be completed.
+- **Refunded**: The payment has been refunded.
 
-## Rate Limits
-
-The PaymentService API enforces rate limits to ensure fair usage. The current limits are:
-- **Requests per minute**: 100
-- **Requests per hour**: 1000
-
-If you exceed these limits, you will receive a `429 Too Many Requests` response. Please implement exponential backoff in your application to handle rate limit errors gracefully.
+### Error Types
+Common error types include:
+- **PaymentException**: General errors related to payment processing.
+- **GatewayTimeoutException**: Errors due to timeouts when communicating with payment gateways.
 
