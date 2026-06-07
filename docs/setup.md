@@ -1,8 +1,1 @@
-# Updated Setup Instructions
-
-The installation steps have been clarified as follows:
-1. **Clone the repository**: Use the command `git clone <repository-url>` to create a local copy of the repository on your machine.
-2. **Install dependencies**: Navigate to the project directory and run `npm install` to install all required packages and dependencies.
-3. **Run the application**: Start the application by executing `npm start`. This will launch the application in your default web browser.
-
-For any issues, please refer to the FAQ section in the documentation.
+# Setup Documentation\n\n## Prerequisites\n- Node.js (version X.X.X)\n- npm (version X.X.X)\n\n## Installation\n1. Clone the repository:\n   ```bash\n   git clone https://github.com/patriciaokonkwo/dashboard-ui.git\n   cd dashboard-ui\n   ```\n2. Install dependencies:\n   ```bash\n   npm install\n   ```\n\n## Running the Project\nTo start the development server:\n```bash\nnpm start\n```\n\n## Environment Variables\nCreate a `.env` file in the root directory and set the necessary environment variables as needed.
