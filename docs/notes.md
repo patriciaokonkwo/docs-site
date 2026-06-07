@@ -1,1 +1,1 @@
-## Notes\n\n- Issue 2: This is a note about issue 2.
+## Notes\n\n- Issue 2: This is an updated note about issue 2.
